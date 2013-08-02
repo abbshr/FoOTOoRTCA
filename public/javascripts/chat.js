@@ -4,7 +4,7 @@
 
 function loadInit() {
 	var socket = io.connect('http://localhost:3000');
-	var from = getUserName(),  //从cookies中读取用户名
+	var from = getUserName('user'),  //从cookies中读取用户名
 		to = 'all';      //默认接受对象为所有人
 	
 	//发送上线信号
@@ -16,9 +16,9 @@ function loadInit() {
 			var sys = '系统消息-（' + now() + '）：' + '你已进入聊天室~';
 		}
 		var content = document.getElementById('contents'),
-				label = document.createElement('label');
-				label.innerHTML = sys + '<br>'; 
-				content.appendChild(label);
+			label = document.createElement('label');
+		label.innerHTML = sys + '<br>'; 
+		content.appendChild(label);
 		//刷新用户在线列表		
 		refreshUsers(data.users, from); 
 		//显示正在对谁说话
@@ -41,6 +41,20 @@ function refreshUsers(users, me) {
 		return false;
 	};
 	all.innerText = '所有人';
+	all.ondblclick = function () {
+		if (!(this.getAttribute('saying')) && this.getAttribute('alt') !== me) {
+			to = this.getAttribute('alt');
+			for (var j in list) {
+				if (list.childNodes[j] && typeof list.childNodes[j] !== 'function') {
+					list.childNodes[j].className = '';
+					list.childNodes[j].removeAttribute('saying');
+				}
+			}
+			this.className = 'sayingTo';
+			this.setAttribute('saying', 'yes');
+			showSayTo(me, to);
+		}
+	};
 	list.appendChild(all);
 	var user = [];
 	for (var i in users) {
@@ -79,20 +93,24 @@ function showSayTo(me, you) {
 
 function now() {
 	var date = new Date(),
-		time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + (date.getMinutes() < 10 ? ('0' + date.getMinutes()) : date.getMinutes()) + ":" + (date.getSeconds() < 10 ? ('0' + date.getSeconds()) : date.getSeconds());
+		time = date.getFullYear() + '-' 
+		+ (date.getMonth() + 1) + '-' 
+		+ date.getDate() + ' ' 
+		+ date.getHours() + ':' 
+		+ (date.getMinutes() < 10 ? ('0' + date.getMinutes()) : date.getMinutes()) + ":" 
+		+ (date.getSeconds() < 10 ? ('0' + date.getSeconds()) : date.getSeconds());
 	return time;
 }
 
 function getUserName(nameSegment) {
 	if (document.cookie.length > 0) {
 		start = document.cookie.indexOf(nameSegment + "=");
-		if (start !== -1) {
+		if (start !== -1) 
 			start += (nameSegment.length + 1); 
-			end = document.cookie.indexOf(";", start);
-			if (end === -1) 
-				end = document.cookie.length;
-			return unescape(document.cookie.substring(start, end));
-		}
+		end = document.cookie.indexOf(";", start);
+		if (end === -1) 
+			end = document.cookie.length;
+		return unescape(document.cookie.substring(start, end));
 	} 
-	return "Ran";
+	return "";
 }
