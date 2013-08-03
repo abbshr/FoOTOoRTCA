@@ -1,11 +1,7 @@
 
-/**
- * Module dependencies.
- */
-
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
+  , socket = require('./routes/socket.js')
   , http = require('http')
   , path = require('path');
 
@@ -28,52 +24,16 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-var users = [];  //在线用户
-
-app.get('/', function (req, res) {
-	if (!req.cookies.user) {
-		return res.redirect('/signin');
-	}
-	res.render('index', {
-		title: 'Chat!~',
-		user: req.cookies.user,
-	});
-});
-
-app.get('/signin', function (req, res) {
-	if (req.cookies.user) {
-		return res.redirect('back');
-	}
-	res.render('signin', {
-		title: '登录-Chat!~',
-	});
-});
-
-app.post('/signin', function (req, res) {
-	//检测用户名是否已存在users数组中
-	if (users.indexOf(req.body.name) === -1) {
-		res.cookie('user', req.body.name, {maxAge:1000*60*60*24*30});
-	}
-	res.redirect('/');
-});
+var users = [];  //存储在线用户
 
 var server = http.createServer(app),
-	io = require('socket.io').listen(server);
-
-io.sockets.on('connection', function (socket) {
-	socket.on('online', function (data) {
-		//将上线用户名存储为socket的属性以区分每个socket对象
-		socket.name = data.user;
-		if (users.indexOf(data.user) === -1) 
-			users.unshift(data.user);
-		io.sockets.emit('online', {
-			users: users,
-			user: data.user
-		});
-	});
-});
+	io = require('socket.io').listen(server);   //Socket绑定至服务器
+	
 server.listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  	console.log('Chat!~服务器已启动, 正在监听端口：' + app.get('port'));
 });
+
+routes(app, users); //路由
+socket(io, users);  //Socket的消息操作
 
 
