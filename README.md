@@ -1,6 +1,8 @@
 Real-Time Chatting Application (Prototype without Database)
 ---
 
+Demo deploy on the platform appfog (dosen't support Socket, down to XHR) :  http://rtchat.ap01.aws.af.cm/
+
 { short as RTCA }
 
 Frontend: HTML5-WebSocket
