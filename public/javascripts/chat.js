@@ -1,12 +1,11 @@
-
 /******* Chat!~ 应用配置 *******/
 	var config = {
 		proxy: "http",
-		host: "localhost",
+		host: "192.168.1.15",
 		port: 3000,
 	},
 		server = config.proxy
-	   		   + "://" + config.host
+	   	     + "://" + config.host
 	     	   + ":" + config.port; 
 /******************************/
 
@@ -23,13 +22,13 @@ function loadInit(link) {              //初始化UI和webSocket连接
 		window.to = 'all';      //默认接受对象为所有人
 	
 	//发送上线信号
-		socket.emit('online', {user: from});
+		socket.emit('online', {user: window.from});
 	
 	//上线响应
 		socket.on('online', function (data) {
 			if (data.user !== from)
 				var sys = '系统消息-（' + now() + '）：'
-					    + '用户' + data.user + '上线';
+								+ '用户' + data.user + '上线';
 			else
 				var sys = '系统消息-（' + now() + '）：' + '你已进入聊天室~';
 			var content = document.getElementById('contents'),
@@ -89,6 +88,7 @@ function loadInit(link) {              //初始化UI和webSocket连接
 				sysinfo.setAttribute('style', "color:#f00");
 			sysinfo.innerHTML = sys + '<br>'; 
 			content.appendChild(sysinfo);
+			socket.emit('online', {user: window.from});
 			enableSpeak();   //与服务器重新连接时绑定发送消息
 		});
 	};
@@ -97,10 +97,11 @@ function loadInit(link) {              //初始化UI和webSocket连接
 
 function refreshUsers(users, me) {       //刷新用户列表并绑定双击事件
 	var list = document.getElementById('list');
-	for (var i = 0; i <= list.childNodes.length; i++) {
-		if (list.childNodes[0] && list.childNodes[0].removeAttribute)
+	for (var i in list.childNodes) {
+		if (list.childNodes[0] && list.childNodes[0].removeChild)
 			list.removeChild(list.childNodes[0]);
 	}
+	console.log('finished', list);
 	var all = document.createElement('li');
 	all.title = '双击聊天';
 	all.setAttribute('alt', 'all');
@@ -110,7 +111,7 @@ function refreshUsers(users, me) {       //刷新用户列表并绑定双击事�
 	all.onselectstart = function () {
 		return false;
 	};
-	all.innerText = '所有人';
+	all.innerHTML = '所有人';
 	all.ondblclick = function () {
 		if (!all.getAttribute('saying')) {
 			window.to = all.getAttribute('alt');
@@ -127,14 +128,13 @@ function refreshUsers(users, me) {       //刷新用户列表并绑定双击事�
 	list.appendChild(all);
 	var user = [];
 	for (var i in users) {
-		var list = document.getElementById('list');
 		user[i] = document.createElement('li');
 		user[i].title = '双击聊天';
 		user[i].setAttribute('alt', users[i]);
 		user[i].onselectstart = function () {
 			return false;
 		};
-		user[i].innerText = users[i];
+		user[i].innerHTML = users[i];
 		user[i].ondblclick = function (e) {   //未使用事件授权~下一版本大换血整改
 			var element = e.target;
 			if (!(element.getAttribute('saying')) && element.getAttribute('alt') !== me) {
@@ -149,6 +149,7 @@ function refreshUsers(users, me) {       //刷新用户列表并绑定双击事�
 				showSayTo(me, window.to);
 			}
 		};
+		console.log('online users:', users[i], user[i]);
 		list.appendChild(user[i]);
 	}
 }
@@ -235,3 +236,4 @@ function disableSpeak() {         //解除发送按钮绑定
 		return false;
 	};
 }
+
