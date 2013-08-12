@@ -24,13 +24,19 @@
   </div>
   <div class="row">
   	<div class="span8 offset4">
+  		<div id="sayingto">Hi~, <span id="from" class="label label-success"></span>, 你正在对 <span id="to" class="label label-important"></span>说</div>
+  		<br>
   		<div id="input_content" contenteditable="true" class="well"></div>
-  		<button id="say" class="btn btn-danger">发送消息</button>
-  		<br><br>
-      <div id="sayingto">Hi~, <span id="from" class="label label-success"></span>, 你正在对 <span id="to" class="label label-important"></span>说</div>
+  		<button id="say" class="btn btn-danger pull-right">发送消息</button>
+  		<br>
   	</div>
   </div>
   </div>
+  <br>
+  <br>
+  <div class="well">
+  	<center>RTCA ©2013</center> 
+	</div>
 <script src="/socket.io/socket.io.js"></script>
 <script src="javascripts/chat.js"></script>
 <script src="http://cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
