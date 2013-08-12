@@ -209,11 +209,11 @@ function getUserName(nameSegment) {       //从cookies中获取用户名
 
 
 function enableSpeak() {        //绑定发送消息事件到按钮
-	var say = document.getElementById('say');
+	var say = document.getElementById('say'),
+			input = document.getElementById('input_content');
 	say.onclick = function () {
 		var time = now();
-		var input = document.getElementById('input_content'),
-			msg = input.childNodes[0];
+		var msg = input.childNodes[0];
 		if (msg == undefined || msg == '<br>' || (msg.wholeText == 0 && !(/0/i).test(msg.wholeText)))
 			return;
 		msg = msg.wholeText;
