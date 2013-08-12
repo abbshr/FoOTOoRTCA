@@ -3,23 +3,31 @@
 <head>
 <meta content="text/html; charset=utf-8">
 <title><%= title %>-RTCA</title>
-<link type="text/css" rel="stylesheet" href="stylesheets/signin.css">
-<link type="text/css" rel="stylesheet" href="stylesheets/common.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap-re.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/googlestyle.css">
 </head>
 <body>
-  <div id="content">
-  	<center><h1>Chat!~</h1></center>
-    <form style="margin-top:70px;" method="post">
-      <div class="form_line">
-        <div class="form_label">昵称：</div>
-        <input type="text" name="name" />
-      </div>
-      <div class="form_line">
-        <div class="form_label"></div>
-        <button class="button gray" type="submit">登录</button>
-        <button class="button gray" type="reset">取消</button>
-      </div>
-    </form>
-  </div>
+<div class="container">
+ 	<div class="row">
+ 		<div class="page-header">
+  		<h1>Chat!~ V1.0<small>Let's free chat</small></h1>
+		</div>
+ 	</div>
+</div>
+<div class="container">
+ 	<div class="row">
+ 	<div class="span6 offset3">
+  	<div class="input-append">
+  		<form method="post">
+  			<input class="span2" id="appendedInputButton" type="text" placeholder="昵称">
+  			<button class="btn btn-danger" type="submit">Enjoy!</button>
+			</form>
+		</div>
+	</div>
+	</div>
+</div>
+<script src="http://cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="javascripts/bootstrap.js"></script>
 </body>
 </html>

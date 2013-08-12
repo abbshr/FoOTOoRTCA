@@ -3,32 +3,37 @@
 <head>
 <meta content="text/html; charset=utf-8">
 <title><%= title %>-RTCA</title>
-<link type="text/css" rel="stylesheet" href="stylesheets/common.css">
-<link type="text/css" rel="stylesheet" href="stylesheets/chat.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/bootstrap-re.css">
+<link type="text/css" rel="stylesheet" href="stylesheets/googlestyle.css">
 </head>
 <body>
-  <div id="contain">
-    <div id="content">
-      <div id="content_show">
-        <div id="contents"></div>
-      </div>
-      <div id="content_saying">
-        <div id="toolbar"></div>
-        <div id="input_content" contenteditable="true"></div>
-        <div id="sayingto">Hi~, <span id="from"></span>, 你正在对 <span id="to"></span>说</div>
-        <div id="say">发送</div>
-      </div>
+	<div class="container">
+ 		<div class="row">
+ 			<div class="page-header">
+  			<h1>Chat!~ V1.0<small>Let's free chat</small></h1>
+			</div>
+ 		</div>
+	</div>
+  <div class="container">
+  <div class="row">
+  	<div class="span4">
+    	<ul class="nav nav-list" id="list"></ul>
     </div>
-    <div id="users_online">
-      <div id="usersbar">
-        <div id="user_label">在线用户</div>
-        <div id="users_list">
-          <ul id="list"></ul>
-        </div>
-      </div>
-    </div>
+    <div id="contents" class="span8"></div>
+  </div>
+  <div class="row">
+  	<div class="span8 offset4">
+  		<div id="input_content" contenteditable="true" class="well"></div>
+  		<button id="say" class="btn btn-danger">发送消息</button>
+  		<br><br>
+      <div id="sayingto">Hi~, <span id="from" class="label label-success"></span>, 你正在对 <span id="to" class="label label-important"></span>说</div>
+  	</div>
+  </div>
   </div>
 <script src="/socket.io/socket.io.js"></script>
 <script src="javascripts/chat.js"></script>
+<script src="http://cdnjs.bootcss.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="javascripts/bootstrap.js"></script>
 </body>
 </html>
