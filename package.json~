@@ -8,6 +8,7 @@
   "dependencies": {
     "express": "3.3.4",
     "ejs": "*",
-    "socket.io": "*"
+    "socket.io": "*",
+    "github-flavored-markdown": "*"
   }
 }

@@ -1,8 +1,8 @@
 /******* Chat!~ 应用配置 *******/
 	var config = {
 		proxy: "http",
-		host: "localhost",
-		port: 3000,
+		host: "rtchat.ap01.aws.af.cm",
+		port: 80,
 	},
 		server = config.proxy
 	   	     + "://" + config.host

@@ -27,7 +27,7 @@
   		<div id="sayingto">Hi~, <span id="from" class="label label-success"></span>, 你正在对 <span id="to" class="label label-important"></span>说</div>
   		<br>
   		<div id="input_content" contenteditable="true" class="well"></div>
-  		<button id="say" class="pull-right btn btn-danger">发送消息</button>
+  		<button id="say" class="btn btn-danger pull-right">发送消息</button>
   		<br>
   	</div>
   </div>
