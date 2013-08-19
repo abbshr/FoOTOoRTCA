@@ -255,7 +255,7 @@ function disableSpeak() {         //解除发送按钮绑定
 	say.onclick = function () {
 		return false;
 	};
-	input.setAttribute('disabled', true);
+	input.setAttribute('disabled');
 	say.setAttribute('class', 'btn btn-danger disabled');
 	say.setAttribute('disabled', 'disabled');
 }
