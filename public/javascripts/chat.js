@@ -26,11 +26,13 @@ function loadInit(link) {              //初始化UI和webSocket连接
 	
 	//上线响应
 		socket.on('online', function (data) {
-			if (data.user !== from)
+			if (data.user !== from) {
 				var sys = '<strong>系统消息（' + now() + '）：</strong>'
 								+ '用户' + data.user + '上线';
-			else
+			} else {
 				var sys = '<strong>系统消息（' + now() + '）：</strong>' + '你已进入聊天室~';
+				enableSpeak();  //绑定发送消息按钮
+			}
 			var content = document.getElementById('contents'),
 				sysinfo = document.createElement('div');
 				sysinfo.setAttribute('class', "alert alert-success");
@@ -60,7 +62,6 @@ function loadInit(link) {              //初始化UI和webSocket连接
 					break;
 			}
 		});
-		enableSpeak();  //绑定发送消息按钮
 	
 	//下线响应
 		socket.on('offline', function (data) {
@@ -241,8 +242,8 @@ function enableSpeak() {        //绑定发送消息事件到按钮
 		input.focus();
 	};
 	say.setAttribute('class', 'btn btn-danger');
-	if (input.getAttribute('contenteditable') === "false")
-		input.setAttribute('contenteditable', 'true');
+	if (input.getAttribute('disabled'))
+		input.removeAttribute('disabled');
 	if (say.getAttribute('disabled'))
 		say.removeAttribute('disabled');
 }
@@ -254,7 +255,7 @@ function disableSpeak() {         //解除发送按钮绑定
 	say.onclick = function () {
 		return false;
 	};
-	input.setAttribute('contenteditable', 'fasle');
+	input.setAttribute('disabled', true);
 	say.setAttribute('class', 'btn btn-danger disabled');
 	say.setAttribute('disabled', 'disabled');
 }
