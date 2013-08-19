@@ -20,6 +20,8 @@ function loadInit(link) {              //初始化UI和webSocket连接
 		window.socket = io.connect(link);
 		window.from = getUserName('user'),  //从cookies中读取用户名
 		window.to = 'all';      //默认接受对象为所有人
+		
+		disableSpeak();
 	
 	//发送上线信号
 		socket.emit('online', {user: window.from});
@@ -98,7 +100,6 @@ function loadInit(link) {              //初始化UI和webSocket连接
 			sysinfo.innerHTML = sys + '<br>'; 
 			content.appendChild(sysinfo);
 			socket.emit('online', {user: window.from});
-			enableSpeak();   //与服务器重新连接时绑定发送消息
 		});
 	};
 };
