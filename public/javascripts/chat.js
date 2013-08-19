@@ -237,7 +237,7 @@ function enableSpeak() {        //绑定发送消息事件到按钮
 		});
 		
 		//清空输入框并获得焦点
-		input.innerHTML = '';
+		input.value = '';
 		input.focus();
 	};
 	say.setAttribute('class', 'btn btn-danger');
