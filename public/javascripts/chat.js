@@ -1,8 +1,8 @@
 /******* Chat!~ 应用配置 *******/
 	var config = {
 		proxy: "http",
-		host: "localhost",
-		port: 3000,
+		host: "rtchat.ap01.aws.af.cm",
+		port: 80,
 	},
 		server = config.proxy
 	   	     + "://" + config.host
@@ -213,10 +213,9 @@ function enableSpeak() {        //绑定发送消息事件到按钮
 			input = document.getElementById('input_content');
 	say.onclick = function () {
 		var time = now();
-		var msg = input.childNodes[0];
-		if (msg == undefined || msg == '<br>' || (msg.wholeText == 0 && !(/0/i).test(msg.wholeText)))
+		var msg = input.value;
+		if (msg == 0 && !(/0/i).test(msg))
 			return;
-		msg = msg.wholeText;
 		var child = document.createElement('div');
 		child.setAttribute('class', 'alert alert-block');
 		if (window.to === 'all')	
