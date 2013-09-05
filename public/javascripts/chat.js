@@ -218,6 +218,7 @@ function enableSpeak() {        //绑定发送消息事件到按钮
 		var msg = input.value;
 		if (msg == 0 && !(/0/i).test(msg))
 			return;
+		msg = msg.replace(/\n/g, '<br>');
 		var child = document.createElement('div');
 		child.setAttribute('class', 'alert alert-block');
 		if (window.to === 'all')	
