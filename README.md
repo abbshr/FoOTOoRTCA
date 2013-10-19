@@ -1,16 +1,20 @@
+##### _Notice!_: This Demo repo is no longer to update, the [new production repo](http://github.com/abbshr/TeamChat.git) has been created. Now we support more features, click [here](http://abbshr.github.io/teamchat) to view the new project page!
+
+---
+
 Real-Time Chatting Application (Prototype without Database)
 ---
 
-**Demo deploy on the platform appfog (dosen't support Socket, down to XHR) :  http://rtchat.ap01.aws.af.cm/**
+notes: version 1.5.1 aepha
 
-**about Demo: wait for a few seconds and it'll build connection via XHR**
+Project Name: TeamChat
 
-{ short as RTCA }
+Frontend: WebSocket && ajax
 
-Frontend: HTML5-WebSocket
+Backend: Node.js(Socket.IO)
 
-Backend: Node(Socket.IO)
+DataBase: MongoDB
 
-Powered by Node.js, 2013
+WebFrame: Express
 
-notes*: version 1.0 prototype
+Features: ([view in page](http://abbshr.github.io/teamchat))
