@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Type=Application
+Name=TeamChat
+Comment=TC Launcher
+Categories=Network;Proxy;
+Exec=teamchat
+Icon=/home/soufii/tc/public/images/tcicon.png
+Terminal=true
+StartupNotify=true
+Name[zh_CN]=TeamChat

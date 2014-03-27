@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<%- include header2 %>
+<body>
+<% if (locals.user) { %>
+  <!-- 提示信息start -->
+  <%- include flashInfo %>
+  <!-- 提示信息end -->
+    <!-- 边栏start -->
+  <%- include userInfo %>
+    <!-- 边栏end -->
+  <!-- 主体内容start -->
+  <div class="block ">
+    <% rooms.forEach(function (room, index) { %>
+      <div>
+        <h5><%= room.title %></h5>
+        <label>title: <%= room.settime %></label>
+        <label><%= room.isPrivate ? '私秘Topic' : '公共Topic' %></label>
+        <label>成员: <%= room.member.length %></label>
+        <a href="/room/get/<%= encodeURIComponent(room._id) %>">加入Topic</a>
+        <a href="/room/history?roomId=<%= escape(room._id) %>">历史记录</a>
+      </div>
+    <% }) %>
+  </div>
+  <!-- 主体内容end -->
+<% } else { %>
+  <div class="dash">
+    <h1>TeamChat</h1>
+    <p>the best way to cooperate</p>
+    <br>
+    <a class="btn" href="/reg">SignUp</a>
+    <a class="btn" href="/signin">SignIn</a>
+  </div>
+  <%- include footer %>
+<% } %>
+
+    <!-- 脚本区块start -->
+  <script src="/javascripts/config.js"></script>
+    <!-- 脚本区块end -->
+</body>
+</html>

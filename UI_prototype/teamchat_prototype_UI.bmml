@@ -1,0 +1,276 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1866" measuredH="871" mockupW="1850" mockupH="850">
+  <controls>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::SearchBox" x="41" y="165" w="159" h="-1" measuredW="124" measuredH="25" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+        <text>search%20members</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::FieldSet" x="41" y="204" w="301" h="199" measuredW="200" measuredH="170" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>15658734</color>
+        <text>Chat%20Group%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::ComboBox" x="246" y="165" w="96" h="-1" measuredW="62" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <text>filter</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::TextArea" x="357" y="204" w="485" h="281" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>11982760</color>
+        <text>*%20System%20Info%0A-%20xxx%20just%20wake%20up%20%7E%20%2C%20at%2010%3A%2030%20a.m.%0A%20%0A*%20Robot%20say%3A%20a%20pdf%20%20document%20has%20been%20upload%20to%20directory%20_Tech_%20by%20Sam%20at%2021%20Nov%202013%0A%20%0ASam%20%3A%20hey%2C%20did%20you%20see%20the%20PDF%20I%20just%20upload%20%3F%0ARan%20%3A%20yes%2C%20but%20I%20don%27t%20understand%20what%27s%20a%20%22doublx%22%20descripted%20in%20Page%209%20%3F%0A%20%0A*%20Robot%20say%3A%20from%20dialog%20I%20found%20a%20char%20that%20%22doublx%22%2C%20and%20I%20have%20interrupted%20on%20the%20panel%20look%20right%20%u2014%3E%0A%20%0ASam%20%3A%20%u2026well%2C%20just%20as%20Robot%20told%20you%7E%0ARan%20%3A%20okey..%0A%20%0A%u2026%0A%u2026%u2026%0A%u2026%u2026%u2026</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::LineChart" x="41" y="455" w="301" h="175" measuredW="187" measuredH="175" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="863" y="226" w="455" h="404" measuredW="200" measuredH="452" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <text>Doublx%0ADemo%20%0ATech%20%0APlans%20%0ADesign%20%0AJavaScript%0APython%0ARuby%0AC%0ABash%0AScheme%0ALisp%0ALua</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::IconLabel" x="313" y="436" w="-1" h="-1" measuredW="24" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <icon>YIMIcon%7Csmall</icon>
+        <text>Ran</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::IconLabel" x="303" y="523" w="-1" h="-1" measuredW="27" measuredH="39" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <icon>RedditIcon%7Csmall</icon>
+        <text>Sam</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::IconLabel" x="74" y="264" w="-1" h="-1" measuredW="24" measuredH="39" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>40463</color>
+        <icon>YIMIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Ran</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::IconLabel" x="113" y="264" w="-1" h="-1" measuredW="27" measuredH="39" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>40463</color>
+        <icon>RedditIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Sam</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::IconLabel" x="149" y="264" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>40463</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::IconLabel" x="190" y="264" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::IconLabel" x="234" y="264" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::IconLabel" x="278" y="264" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::IconLabel" x="278" y="342" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::IconLabel" x="234" y="342" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::IconLabel" x="149" y="342" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::IconLabel" x="190" y="342" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::IconLabel" x="68" y="342" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="62" controlTypeID="com.balsamiq.mockups::IconLabel" x="109" y="342" w="-1" h="-1" measuredW="35" measuredH="39" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>6710886</color>
+        <icon>EmoticonIcon%7Csmall</icon>
+        <labelPosition>bottom</labelPosition>
+        <text>Stven</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="330" y="211" w="-1" h="192" measuredW="16" measuredH="100" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::VerticalScrollBar" x="1302" y="226" w="-1" h="404" measuredW="16" measuredH="100" zOrder="22" locked="false" isInGroup="-1"/>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::SubTitle" x="94" y="427" w="-1" h="-1" measuredW="194" measuredH="21" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>18</size>
+        <text>Most%20devoted%20this%20week</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="979" y="265" w="272" h="160" measuredW="200" measuredH="80" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>16</size>
+        <text>%23%22Doublx%22%0A%20%0Aa%20%22Doublx%22%20is%20%7E%21@%23%24%25%5E%26*%28%29%3A%22%3E%3C%3F%7B%7C%7D%7B+_%28_%28%26%5E*%26%25%24@%21%7E@%21@%0A%20%0A%09from%20Wikipadia</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::StickyNote" x="677" y="367" w="123" h="123" measuredW="109" measuredH="123" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>you%20just%20archive%20the%20key%20word%20in%20talk%20%7E</text>
+      </controlProperties>
+    </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::ButtonBar" x="932" y="199" w="386" h="27" measuredW="244" measuredH="27" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>2</selectedIndex>
+        <text>task%2C%20files%2C%20keywords%2C%20history</text>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::Title" x="357" y="167" w="455" h="-1" measuredW="347" measuredH="21" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Topic%20%3A%20choose%20a%20programing%20language%20first</text>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::TextArea" x="357" y="490" w="484" h="140" measuredW="200" measuredH="140" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%23%21/bin%20env%20node%0A%20%0Avar%20greek%20%3D%20process.stdin%28%29.resume%28%29%3B%0Aconsole.log%28%22hehe%22%29%3B</text>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::HRule" x="74" y="445" w="221" h="-1" measuredW="100" measuredH="10" zOrder="29" locked="false" isInGroup="-1"/>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::MultilineButton" x="733" y="581" w="108" h="30" measuredW="70" measuredH="66" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>545684</color>
+        <text>public</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::MultilineButton" x="733" y="540" w="108" h="28" measuredW="55" measuredH="66" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16750848</color>
+        <text>add</text>
+      </controlProperties>
+    </control>
+    <control controlID="87" controlTypeID="com.balsamiq.mockups::MultilineButton" x="733" y="500" w="108" h="29" measuredW="69" measuredH="66" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <text>share</text>
+      </controlProperties>
+    </control>
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::Image" x="1043" y="403" w="164" h="138" measuredW="77" measuredH="79" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <src>../%25E6%25A1%258C%25E9%259D%25A2/Razer_Blade_14_35780325_07_610x436.jpg</src>
+        <text>Img</text>
+      </controlProperties>
+    </control>
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::HRule" x="68" y="245" w="147" h="-1" measuredW="100" measuredH="10" zOrder="34" locked="false" isInGroup="-1"/>
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Label" x="74" y="226" w="-1" h="-1" measuredW="121" measuredH="21" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Task1%20-%20development</text>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::HRule" x="68" y="326" w="147" h="-1" measuredW="100" measuredH="10" zOrder="36" locked="false" isInGroup="-1"/>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Label" x="74" y="307" w="-1" h="-1" measuredW="107" measuredH="21" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Task2%20-%20UI%20design</text>
+      </controlProperties>
+    </control>
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::Title" x="50" y="109" w="-1" h="-1" measuredW="185" measuredH="43" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>TeamChat</text>
+      </controlProperties>
+    </control>
+    <control controlID="111" controlTypeID="com.balsamiq.mockups::HSlider" x="1323" y="364" w="54" h="-1" measuredW="33" measuredH="11" zOrder="39" locked="false" isInGroup="-1"/>
+    <control controlID="112" controlTypeID="com.balsamiq.mockups::Tooltip" x="733" y="651" w="444" h="186" measuredW="452" measuredH="0" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>msg%20send%20panel%3A%0A%20%0Au%20can%20share%20a%20tip%20%2C%20a%20link%20%2C%20a%20gist%2C%20a%20tec-knowdage%20via%20*%20share%20*%20bubble%0A%20%0A*%20add%20*%20bubble%20means%20append%20something%20else%20to%20your%20talk%0A%20%0Acertainly%20%2C%20*%20public%20*%20is%20used%20to%20public%20your%20talk%20to%20publics</text>
+      </controlProperties>
+    </control>
+    <control controlID="113" controlTypeID="com.balsamiq.mockups::Paragraph" x="1377" y="347" w="489" h="283" measuredW="200" measuredH="80" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>This%20panel%20contains%204%20tabs%20%3A%20%22Tasks%22%2C%20%22Files%22%2C%20%22Keywords%22%2C%20%22History%22%0A%20%0A*%20%22tasks%22%3A%20if%20u%20r%20the%20admin%20of%20current%20topic%2C%20there%27ll%20be%20all%20members%27%20task%20that%20u%20assigned%0A%20%0A*%20%22files%22%3A%20well%2C%20that%27s%20the%20sources%20tree%20everyone%20public%20to%20u%0A%20%0A*%20%22keywords%22%3A%20all%20the%20word%20about%20keyword%20during%20the%20talk%20will%20auto%20archived%20here.%20beside%2C%20u%20can%20also%20do%20it%20by%20manual%0A%20%0A*%20%22history%22%3A%20if%20u%20want%20to%20view%20what%20they%20have%20talked%20about%2C%20come%20here%0A%20%0A%20%0A_Notes_%20%3A%20every%20Tab%20has%20the%20subtabs%20%28append%20to%20left%29.%20%0Afor%20example%3A%20in%20%22keywords%22%20%20main%20tab%2C%20u%20can%20see%20many%20subtabs%20on%20your%20left%20hand.%0Aright%21%20they%20are%20the%20keywords%20u%20have%20archived.%20click%20one%20subtabs%20u%20can%20c%20the%20details%20about%20it</text>
+      </controlProperties>
+    </control>
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::VSlider" x="137" y="637" w="-1" h="86" measuredW="11" measuredH="33" zOrder="42" locked="false" isInGroup="-1"/>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::Paragraph" x="148" y="721" w="337" h="80" measuredW="200" measuredH="80" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>this%20is%20a%20devote%20Analysis%20broad%0A%20%0Au%20can%20see%20how%20many%20devote%20the%20active%20members%20has%20done%20to%20their%20task%20in%20a%20week/month/day</text>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::Arrow" x="190" y="199" w="1088" h="489" measuredW="150" measuredH="100" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::Paragraph" x="1278" y="688" w="376" h="183" measuredW="200" measuredH="80" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>this%20is%20the%20main%20panel%20of%20teamchat%0A%20%0Afor%20_search%20members_%20%26%20_filter_%2C%20u%20can%20find%20the%20specific%20group%20or%20people%20by%20filter%0A%20%0Afor%20_chat%20group_%2C%20there%20will%20show%20members%20by%20task-assign%20if%20admin%20assigned%0Aonline%20users%20shown%20in%20colored%20while%20offline%20users%20shown%20in%20gray%20which%20is%20easy%20to%20distinguish</text>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="357" y="142" w="-1" h="-1" measuredW="229" measuredH="24" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>teamchat%2Cyour%20topic%2Cchat%20about%20s%u2026</text>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="16" y="21" w="1311" h="648" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>TeamChat%0Ahttp%3A//teamchat.io</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,11 @@
+<div class="" id="userinfo">
+	<img src="<%= locals.user.headimg %>" />
+	<span><%= locals.user.name %></span>
+	<span><%= locals.user.email %></span>
+	<span><%= locals.user.job %></span>
+	<span><%= locals.user.info %></span>
+	<form action="/room" method="GET">
+		<input type="text" name="roomtitle" placeholder="search Rooms" class="search" />
+	</form>
+	<a href="/logout">logOut</a>
+</div>

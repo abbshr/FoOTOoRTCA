@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<%- include header %>
+<body>
+  <!-- 提示信息start -->
+  <%- include flashInfo %>
+  <!-- 提示信息end -->
+    <!-- 边栏start -->
+    <%- include userInfo %>
+    <!-- 边栏end -->
+  <!-- 主体内容start -->
+  <div>
+    <% msgs.forEach(function (msg, index) { %>
+      <div>
+        <label>时间: <%= msg.time %></label>
+        <label>from: <%= msg.from %></label>
+        <label>to: 
+        <% if (msg.to == 'all') { %>
+          所有人
+        <% } else { %>
+          <%= msg.to %>
+        <% } %>
+        </label>
+        <div>内容: 
+          <%= msg.context %>
+         </div>
+      </div>
+    <% }) %>
+  </div>
+  <!-- 主体内容end -->
+
+    <!-- 脚本区块start -->
+  <script src="/javascripts/config.js"></script>
+    <!-- 脚本区块end -->
+</body>
+</html>

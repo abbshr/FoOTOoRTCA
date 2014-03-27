@@ -1,20 +1,29 @@
-##### _Notice!_: This Demo repo is no longer to update, the [new production repo](http://github.com/abbshr/TeamChat.git) has been created. Now we support more features, click [here](http://abbshr.github.io/teamchat) to view the new project page!
+#TeamChat.io
 
----
+the best way to cooperate online
 
-Real-Time Chatting Application (Prototype without Database)
----
+How to run it?
+--
+Before this, make sure a Node.js 0.8+ runtime has been installed.
 
-notes: version 1.5.1 aepha
+first clone this repo to your local directory:
 
-Project Name: TeamChat
+	git clone git@github.com:FoOTOo/TeamChat.git && cd TeamChat
+    
+then run the bash file as root:
 
-Frontend: WebSocket && ajax
+	sudo bash initOnce.sh
+    
+or
 
-Backend: Node.js(Socket.IO)
+	sudo initOnce.sh
+    
+before running the Server, you must configure SMTP-Server info in `settings.js` correctly!
+    
+ok! let's just run `app.js` or from terminal:
 
-DataBase: MongoDB
-
-WebFrame: Express
-
-Features: ([view in page](http://abbshr.github.io/teamchat))
+	teamchat
+    
+open a new tab `http://localhost:3000` in Chrome to start Client
+    
+press `CTRL + C` to abort the process 

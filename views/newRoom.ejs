@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<%- include header %>
+<body>
+	<!-- 提示信息start -->
+  <div>
+    <%- include flashInfo %>
+  </div>
+  <!-- 提示信息end -->
+  <!-- 主体内容start -->
+  <div>
+    <form method="post">
+      <label>Room's name:</label><input type="text" name="title" /><br>
+      <label>is it private?</label>
+      <input type="radio" checked="checked" name="isPrivate" value="yes" />yes</input>
+      <input type="radio" name="isPrivate" value="no" />no</input>
+      <input type="submit" value="Chat!" />
+    </form>
+  </div>
+  <!-- 主体内容end -->
+  	<!-- 脚本区块start -->
+    <script src="/javascripts/config.js"></script>
+  	<!-- 脚本区块end -->
+</body>
+</html>

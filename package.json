@@ -1,6 +1,7 @@
 {
-  "name": "RTCA",
+  "name": "TeamChat",
   "version": "0.0.1",
+  "description": "a Real-Time Chating Application for teams",
   "private": true,
   "scripts": {
     "start": "node app.js"
@@ -8,6 +9,10 @@
   "dependencies": {
     "express": "3.3.4",
     "ejs": "*",
-    "socket.io": "*"
+    "mongodb": "*",
+    "connect-mongo": "*",
+    "connect-flash": "*",
+    "socket.io": "*",
+    "nodemailer": "*"
   }
 }

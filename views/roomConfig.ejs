@@ -1,0 +1,31 @@
+<div class="">
+	<form method="post">
+      <label>Room's name:</label><input type="text" name="title" value="<%= room.title %>" /><br>
+      <label>private setting:</label>
+      <% if (room.isPrivate) { %>
+	      <input type="radio" checked="checked" name="isPrivate" value="yes" />yes</input>
+	      <input type="radio" name="isPrivate" value="no" />no</input>
+	  <% } else { %> 
+	  	  <input type="radio" name="isPrivate" value="yes" />yes</input>
+	      <input type="radio" checked="checked" name="isPrivate" value="no" />no</input>
+	  <% } %>
+	  <br>
+	  <label>admin：</label><input type="text" name="admin" value="<%= room.admin %>" /><br>
+	  <label>members:</lable><br>
+	  <% room.member.forEach(function (user, index) { %>
+	  	  <span class=""><%= user %></span>
+	  	  <% if (index !== room.member.length - 1) { %>
+	  	  	<label>,</label>
+	  	  <% } %>
+	  <% }) %>
+	  <br>
+	  <label>add Members:(name split by "," or "，")</label>
+	  <input type="text" name="newmembers" />
+	  <br>
+	  <label>del Members:(name split by "," or "，")</label>
+	  <input type="text" name="delmembers" />
+	  <br>
+      <input type="submit" value="Update" />
+    </form>
+    <a href="/room/delete/<%= encodeURIComponent(room._id) %>">Delete this Room</a>
+</div>

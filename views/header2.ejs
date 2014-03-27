@@ -1,0 +1,9 @@
+<head>
+  <meta content="text/html; charset=utf-8">
+  <title><%= title %></title>
+<% if (!locals.user) { %>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/dash.css">
+<% } else { %>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/style.css">
+<% } %>
+</head>

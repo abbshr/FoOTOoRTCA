@@ -1,0 +1,18 @@
+<div class="">
+	<div class="">
+	  	<h5><%= room.title %></h5>
+	  	<label>开启时间： <%= room.settime %></label>
+	  	<label><%= room.isPrivate ? '私秘Topic' : '公共Topic' %></label>
+	  	<label>成员数: <%= room.member.length %></label>
+	  	<a href="/room/get/<%= encodeURIComponent(room._id) %>">邀请链接</a>
+  	</div>
+  	<div class="" id="contents" style="width:750px; height:150px; overflow: scroll">
+  		
+  	</div>
+  	<div class="">
+      <div id="sayingto">你正在对<span id="to" class="label label-important"></span>说</div>
+  		<textarea id="input_content" class="well" style="margin: 0px 0px 20px; width: 730px; height: 58px;"></textarea>
+      <button id="say" class="pull-right btn btn-danger">发送消息</button>
+  	</div>
+</div>
+

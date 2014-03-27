@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<%- include header %>
+<body>
+	<!-- 提示信息start -->
+  <div>
+    <%- include flashInfo %>
+  </div>
+  <!-- 提示信息end -->
+  <!-- 主体内容start -->
+  <div>
+    <form method="post">
+      <label>user name(Read-Only):</label><input type="text" name="name" readonly value="<%= locals.user.name %>" /><br>
+      <label>password:</label><input type="password" name="pwd" value="<%= locals.user.pwd %>" />
+      <label>email:</label><input type="email" name="email" value="<%= locals.user.email %>" />
+      <label>job:</label><input type="text" name="job" value="<%= locals.user.job.join() %>" />
+      <label>info:</label><input type="text" name="info" value="<%= locals.user.info %>" />
+      <input type="submit" value="Update" />
+    </form>
+  </div>
+  <!-- 主体内容end -->
+  	<!-- 脚本区块start -->
+    <script src="/javascripts/config.js"></script>
+  	<!-- 脚本区块end -->
+</body>
+</html>

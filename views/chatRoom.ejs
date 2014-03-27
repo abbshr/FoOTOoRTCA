@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<%- include header %>
+<body>
+	<!-- 提示信息start -->
+  <%- include flashInfo %>
+  <!-- 提示信息end -->
+  	<!-- 左边栏start -->
+  <%- include userInfo %>
+  	<!-- 左边栏end -->
+    <!-- 右边栏start -->
+  <%- include onlineUsers %>
+    <!-- 右边栏end -->
+  <!-- 主体内容start -->
+  <%- include chatPanel %>
+  <!-- 主体内容end -->
+  	<!-- 脚本区块start -->
+    <script src="/javascripts/config.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/script.js"></script>
+  	<!-- 脚本区块end -->
+</body>
+</html>
