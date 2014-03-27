@@ -1,6 +1,6 @@
-#TeamChat.io
+#RTCA
 
-the best way to cooperate online
+RealTime Chat app
 
 How to run it?
 --
@@ -8,7 +8,7 @@ Before this, make sure a Node.js 0.8+ runtime has been installed.
 
 first clone this repo to your local directory:
 
-	git clone git@github.com:FoOTOo/TeamChat.git && cd TeamChat
+	git clone git@github.com:abbshr/FoOTOoRTCA.git && cd FoOTOoRTCA
     
 then run the bash file as root:
 
